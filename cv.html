@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV — Karol Kisielowski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Karol Kisielowski</a>
+        <nav class="menu" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications & Talks</a>
+          <a href="cv.html" aria-current="page">CV</a>
+          <a href="updates.html">Updates</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Curriculum Vitae</h1>
+      <p>Download the full PDF: <a class="btn" href="assets/docs/Karol_Kisielowski_CV.pdf" target="_blank" rel="noopener">Open CV</a></p>
+
+      <section class="grid-2">
+        <div>
+          <h2>Education</h2>
+          <ul class="list">
+            <li><strong>MSc Astronomy</strong>, University of Groningen (2025–)</li>
+            <li><strong>BSc Astronomy</strong>, University of Groningen (2021–2025)</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <ul class="list">
+            <li> Add this later ;p </li>
+            <!--
+            <li>Python (NumPy, Astropy, Matplotlib), Bash</li>
+            <li>FITS, WCS, spectral fitting</li>
+            <li>Data viz and scientific writing</li> 
+            -->
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <ul class="list">
+          <li> ING Internship </li>
+          <li>Researc -, WEAVE Galaxy Clusters — data pipelines and analysis.</li>
+          <li>Teaching Assistant — Observational Astronomy, programming labs.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><p>© <span id="year"></span> Karol Kisielowski</p></div>
+      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+  </body>
+</html>
