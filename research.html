@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research — Karol Kisielowski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Karol Kisielowski</a>
+        <nav class="menu" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="publications.html">Publications & Talks</a>
+          <a href="cv.html">CV</a>
+          <a href="updates.html">Updates</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Research & Projects</h1>
+      <p>Interests: galaxy evolution, cluster environments, spectral fitting, multiplex spectroscopy,
+        scientific Python tooling.</p>
+
+      <section id="msc-thesis" class="project">
+        <h2>BSc Thesis</h2>
+        <p><strong>Title:</strong> Star Formation Histories of Galaxies in WEAVE Galaxy Clusters</p>
+        <p><strong>Summary:</strong> Pipeline for L1/L2 WEAVE products, spectral fitting for SFH and
+          kinematics across galaxies.</p>
+        <img class="figure" src="assets/img/galaxymaps.png" alt="Example plot" />
+      </section>
+
+
+      <section id="projects" class="project">
+        <h2>Selected Tools & Projects</h2>
+        <ul>
+          <li>WEST (WEAVE Essential SFH Tools)</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><p>© <span id="year"></span> Karol Kisielowski</p></div>
+      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+  </body>
+</html>
