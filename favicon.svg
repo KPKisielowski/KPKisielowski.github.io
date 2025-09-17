@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
   <defs>
     <clipPath id="hexClip">
-      <polygon points="72,32 184,32 240,128 184,224 72,224 16,128"/>
+      <polygon points="64.0,17.149 192.0,17.149 256.0,128.0 192.0,238.851 64.0,238.851 0.0,128.0"/>
     </clipPath>
 
     <linearGradient id="warmVivid" x1="36" y1="128" x2="220" y2="128" gradientUnits="userSpaceOnUse">
@@ -27,18 +27,19 @@
     </radialGradient>
   </defs>
 
-  <polygon points="72,32 184,32 240,128 184,224 72,224 16,128"
+  <polygon points="64.0,17.149 192.0,17.149 256.0,128.0 192.0,238.851 64.0,238.851 0.0,128.0"
            fill="#1b263b" stroke="#0d1b2a" stroke-width="10" stroke-linejoin="round"/>
 
   <g clip-path="url(#hexClip)" fill="none" stroke-linecap="round">
-    <path d="M46 114 A102 74 25 1 1 210 114" stroke="url(#warmVivid)" stroke-width="24"/>
-    <path d="M70 122 A78 54 25 1 1 186 122"  stroke="url(#warmVivid)" stroke-width="16"/>
-    <path d="M96 128 A48 34 25 1 1 160 128"  stroke="url(#warmVivid)" stroke-width="10"/>
+    <!-- Keep arcs conservative so they sit well inside the maximal hex -->
+    <path d="M50 116 A96 72 25 1 1 206 116" stroke="url(#warmVivid)" stroke-width="24"/>
+    <path d="M72 124 A74 52 25 1 1 184 124"  stroke="url(#warmVivid)" stroke-width="16"/>
+    <path d="M98 130 A46 32 25 1 1 158 130"  stroke="url(#warmVivid)" stroke-width="10"/>
 
-    <path d="M50 172 A82 58 -25 0 0 206 172" stroke="url(#warmVivid)" stroke-width="16"/>
-    <path d="M66 188 A64 46 -25 0 0 190 188"  stroke="url(#warmVivid)" stroke-width="12"/>
+    <path d="M54 172 A80 58 -25 0 0 202 172" stroke="url(#warmVivid)" stroke-width="16"/>
+    <path d="M70 188 A62 46 -25 0 0 186 188"  stroke="url(#warmVivid)" stroke-width="12"/>
 
-    <path d="M56 148 A92 64 25 0 0 200 148" stroke="url(#coolFade)" stroke-width="8"/>
+    <path d="M58 150 A90 64 25 0 0 198 150" stroke="url(#coolFade)" stroke-width="8"/>
 
     <circle cx="128" cy="128" r="92" fill="url(#coreGlow)" opacity="0.12"/>
   </g>
