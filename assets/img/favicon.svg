@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
   <defs>
-    <!-- Hex clip -->
     <clipPath id="hexClip">
-      <polygon points="128,20 214,70 214,186 128,236 42,186 42,70"/>
+      <polygon points="72,32 184,32 240,128 184,224 72,224 16,128"/>
     </clipPath>
 
-    <!-- Vivid warm gradient: brighter center, richer oranges -->
     <linearGradient id="warmVivid" x1="36" y1="128" x2="220" y2="128" gradientUnits="userSpaceOnUse">
       <stop offset="0"    stop-color="#fff0bf" stop-opacity="0"/>
       <stop offset="0.28" stop-color="#ffe7a1" stop-opacity="0.95"/>
@@ -16,14 +14,12 @@
       <stop offset="1"    stop-color="#fca311" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Subtle cool density hint -->
     <linearGradient id="coolFade" x1="56" y1="148" x2="200" y2="148" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7b96b8" stop-opacity="0"/>
+      <stop offset="0"   stop-color="#7b96b8" stop-opacity="0"/>
       <stop offset="0.5" stop-color="#9fb6d3" stop-opacity="0.75"/>
-      <stop offset="1" stop-color="#3a506b" stop-opacity="0"/>
+      <stop offset="1"   stop-color="#3a506b" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Core glow (slightly stronger) -->
     <radialGradient id="coreGlow" cx="128" cy="128" r="20" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff9e1"/>
       <stop offset="0.5" stop-color="#ffe7a8"/>
@@ -31,28 +27,21 @@
     </radialGradient>
   </defs>
 
-  <!-- Hex background -->
-  <polygon points="128,20 214,70 214,186 128,236 42,186 42,70"
+  <polygon points="72,32 184,32 240,128 184,224 72,224 16,128"
            fill="#1b263b" stroke="#0d1b2a" stroke-width="10" stroke-linejoin="round"/>
 
-  <!-- Galaxy (clipped) -->
   <g clip-path="url(#hexClip)" fill="none" stroke-linecap="round">
-    <!-- Top symmetric swirls (kept inside edges) -->
     <path d="M46 114 A102 74 25 1 1 210 114" stroke="url(#warmVivid)" stroke-width="24"/>
     <path d="M70 122 A78 54 25 1 1 186 122"  stroke="url(#warmVivid)" stroke-width="16"/>
     <path d="M96 128 A48 34 25 1 1 160 128"  stroke="url(#warmVivid)" stroke-width="10"/>
 
-    <!-- Bottom symmetric swirls -->
     <path d="M50 172 A82 58 -25 0 0 206 172" stroke="url(#warmVivid)" stroke-width="16"/>
     <path d="M66 188 A64 46 -25 0 0 190 188"  stroke="url(#warmVivid)" stroke-width="12"/>
 
-    <!-- Cool density hint -->
     <path d="M56 148 A92 64 25 0 0 200 148" stroke="url(#coolFade)" stroke-width="8"/>
 
-    <!-- Gentle center lift -->
     <circle cx="128" cy="128" r="92" fill="url(#coreGlow)" opacity="0.12"/>
   </g>
 
-  <!-- Core -->
   <circle cx="128" cy="128" r="11" fill="url(#coreGlow)"/>
 </svg>
